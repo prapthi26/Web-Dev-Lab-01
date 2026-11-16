@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Navigation and Card Overlay</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sticky Navigation */
+        nav {
+            background-color: darkblue;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        /* Page Content */
+        .content {
+            padding: 30px;
+            height: 1200px;
+        }
+
+        /* Card */
+        .card {
+            position: relative;
+            width: 300px;
+            margin: 30px auto;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Overlay */
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="content">
+
+        <h1>My Portfolio</h1>
+
+        <p>Scroll down to see that the navigation bar remains visible.</p>
+
+        <div class="card">
+
+            <img src="https://picsum.photos/300/200" alt="Sample Image">
+
+            <div class="overlay">
+                My Project
+            </div>
+
+        </div>
+
+        <p>
+            This is some extra content to make the page scrollable.
+        </p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .newspaper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+        }
+
+        header {
+            grid-column: 1 / 4;
+            text-align: center;
+            border-bottom: 2px solid black;
+        }
+
+        article {
+            padding: 15px;
+            border: 1px solid gray;
+        }
+
+        aside {
+            padding: 15px;
+            background-color: lightgray;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="newspaper">
+
+        <header>
+            <h1>THE DAILY NEWS</h1>
+            <p>Today's Latest News</p>
+        </header>
+
+        <aside>
+            <h2>Side News</h2>
+            <p>Weather updates and local news.</p>
+        </aside>
+
+        <article>
+            <h2>Main Headline</h2>
+
+            <img src="https://picsum.photos/400/200" alt="News Image">
+
+            <p>
+                This is the main news article. It contains important
+                information about today's events.
+            </p>
+        </article>
+
+        <aside>
+            <h2>Latest News</h2>
+            <p>Technology and sports updates.</p>
+        </aside>
+
+        <article>
+            <h2>Technology</h2>
+            <p>Latest developments in technology and computers.</p>
+        </article>
+
+        <article>
+            <h2>Sports</h2>
+            <p>Latest sports news and updates.</p>
+        </article>
+
+    </div>
+
+</body>
+</html>

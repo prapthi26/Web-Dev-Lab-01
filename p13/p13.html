@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox or Grid</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Navigation using Flexbox */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+            background-color: darkblue;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Cards using Flexbox */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            width: 200px;
+            padding: 20px;
+            border: 1px solid gray;
+            text-align: center;
+        }
+
+        /* Two-dimensional content using Grid */
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .main {
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        .side {
+            padding: 20px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h1 style="text-align:center;">My Projects</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Project 1</h2>
+            <p>HTML Project</p>
+        </div>
+
+        <div class="card">
+            <h2>Project 2</h2>
+            <p>CSS Project</p>
+        </div>
+
+        <div class="card">
+            <h2>Project 3</h2>
+            <p>Java Project</p>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="main">
+            <h2>Main Content</h2>
+            <p>This is the main section of the webpage.</p>
+        </div>
+
+        <div class="side">
+            <h2>Sidebar</h2>
+            <p>This is the side content.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
